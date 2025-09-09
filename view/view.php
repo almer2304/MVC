@@ -26,7 +26,7 @@ $planets = $planetModel->getAll();
             <tr>
                 <td><?= $p['id']; ?></td>
                 <td><?= $p['nama_planet']; ?></td>
-                <td><?= $p['ciri_ciri_planet ']; ?></td>
+                <td><?= $p['ciri_ciri_planet']; ?></td>
                 <td><?= $p['planet_ke_berapa']; ?></td>
             </tr>
             <?php endforeach; ?>
