@@ -19,8 +19,8 @@ $planets = $planetModel->getAll();
             <tr>
                 <th>ID</th>
                 <th>Nama Planet</th>
-                <th>Planet ke-berapa</th>
                 <th>Ciri-ciri Planet</th>
+                <th>Planet ke-berapa</th>
             </tr>
             <?php foreach ($planets as $p): ?>
             <tr>
