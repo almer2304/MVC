@@ -24,8 +24,8 @@
         }
 
         public function getById($id){
-            $query = "SELECT * FROM planet WHERE id={$id}";
-
+           $sql = "SELECT * FROM planet WHERE id=$id";
+           return $this->conn->query($sql)->fetch_assoc();
 
         }
     }
