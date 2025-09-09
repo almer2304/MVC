@@ -6,12 +6,15 @@ class Connection{
     private $password = "";
     private $database = "informasi_planet";
 
-    public function connect($connect){
-        $connect = mysqli_connect($hostname, $username, $password, $database);
+    public function connect(){
+        $connect = mysqli_connect($this->hostname, $this->username, $this->password, $this->database);
         return ($connect);
 
         if($connect){
             echo "koneksi kamu berhasil";
+        }
+        else{
+            echo "connect gagal";
         }
     }
 }

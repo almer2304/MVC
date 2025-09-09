@@ -1,8 +1,8 @@
 <?php
 
-    include "connect.php";
+    require "connect.php";
 
     $planet = new Connection();
-    $planet = connect();
+    $coba = $planet->connect(); 
 
 ?>
