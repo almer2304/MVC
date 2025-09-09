@@ -1,16 +1,17 @@
 <?php
+    require_once "../connect.php";
 
     class ModelPlanet extends Connection{
         private $conn;
 
         public function __construct(){
            $database = new Connection();
-           $this->conn = $database->$connect();
+           $this->conn = $database->connect();
 
         }
 
         public function getAll(){
-            $query = "SELECT * FROM informasi_planet";
+            $query = "SELECT * FROM planet";
             $result = mysqli_query($this->conn, $query);
 
             $planets = [];
@@ -20,6 +21,12 @@
                 }
             }
             return $planets;
+        }
+
+        public function getById($id){
+            $query = "SELECT * FROM planet WHERE id={$id}";
+
+
         }
     }
 

@@ -1,8 +1,8 @@
 <?php
 
-    require "connect.php";
+    require_once "controller/controller.php";
 
-    $planet = new Connection();
-    $coba = $planet->connect(); 
+    $controller = new ControllerPlanet();
+    $controller->index(); 
 
 ?>
